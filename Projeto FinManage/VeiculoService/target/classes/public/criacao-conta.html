@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Criação de Conta</title>
+  <link rel="stylesheet" type="text/css" href="./css/criacao-conta.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Criação de Conta</h1>
+
+    <form id="formConta">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" required>
+
+      <button type="submit">Criar Conta</button>
+      <button type="button" id="btnCancelar">Cancelar</button>
+    </form>
+
+    <div id="mensagemContaCriada" style="display: none;">
+      Conta criada com sucesso!
+    </div>
+
+    <ul id="listaContas"></ul>
+  </div>
+
+  <script src="./scripts/criacao-conta.js"></script>
+
+</body>
+
+</html>

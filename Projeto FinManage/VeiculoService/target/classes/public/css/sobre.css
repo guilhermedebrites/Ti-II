@@ -1,0 +1,103 @@
+body {
+    background-image: url("../image/black-green\ background.jpg");
+    color: white;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: flex;
+}
+
+.auth-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hero {
+    background-image: url("imagem-home/black-green\ background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.features {
+    background-color: white;
+    color: black;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.feature {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.feature img {
+    width: 100px;
+    height: 100px;
+}
+
+.about {
+    background-image: url("../image/black-green\ background.jpg");
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 28px;
+}
+
+.about p {
+    font-size: 16px;
+}
+
+footer {
+    background-image: url("../image/black-green\ background.jpg");
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
