@@ -20,7 +20,6 @@ public class UsuarioDAO extends DAO {
 			String sql = "INSERT INTO usuarios (nome_completo, email, senha) "
 					+ "VALUES ('" + user.getNomeCompleto() + "', '"
 					+ user.getEmail() + "', '" + user.getSenha() + "');";
-			System.out.println(sql);
 			PreparedStatement st = conexao.prepareStatement(sql);
 			st.executeUpdate();
 			st.close();
