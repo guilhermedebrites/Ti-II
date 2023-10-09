@@ -8,6 +8,14 @@ public class Despesa {
     private String nome;
     private int id_usuario;
 
+    public Despesa(String categoria, String data, double valor, String nome, int id_usuario) {
+        this.categoria = categoria;
+        this.data = data;
+        this.valor = valor;
+        this.nome = nome;
+        this.id_usuario = id_usuario;
+    }
+
     public int getId() {
         return id;
     }
