@@ -16,6 +16,15 @@ public class Despesa {
         this.id_usuario = id_usuario;
     }
 
+     public Despesa(int id,String categoria, String data, double valor, String nome, int id_usuario) {
+        this.id = id;
+        this.categoria = categoria;
+        this.data = data;
+        this.valor = valor;
+        this.nome = nome;
+        this.id_usuario = id_usuario;
+    }
+
     public int getId() {
         return id;
     }
