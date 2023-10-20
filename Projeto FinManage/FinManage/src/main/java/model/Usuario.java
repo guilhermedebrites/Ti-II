@@ -12,6 +12,13 @@ public class Usuario {
 		this.senha = senha;
 	}
 
+	public Usuario(int id,String nomeCompleto, String email, String senha) {
+		this.id = id;
+		this.nomeCompleto = nomeCompleto;
+		this.email = email;
+		this.senha = senha;
+	}
+
 	public int getId() {
 		return id;
 	}

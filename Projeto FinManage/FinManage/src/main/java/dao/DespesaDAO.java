@@ -42,7 +42,7 @@ public class DespesaDAO extends DAO {
 			String sql = "SELECT * FROM despesa WHERE id =" + id + ";";
 			ResultSet rs = st.executeQuery(sql);
 			if (rs.next()) {
-				despesa = new Despesa(rs.getString("categoria"), rs.getString("data"),
+				despesa = new Despesa(rs.getInt("id"),rs.getString("categoria"), rs.getString("data"),
 						rs.getDouble("valor"), rs.getString("nome"), rs.getInt("id_usuario"));
 			}
 			st.close();
@@ -58,10 +58,23 @@ public class DespesaDAO extends DAO {
 			String sql = "UPDATE despesa SET categoria = '" + despesa.getCategoria() + "', " +
 					"data = '" + despesa.getData() + "', " +
 					"valor = " + despesa.getValor() + ", " +
-					"nome = '" + despesa.getNome() + "', " +
-					"id_usuario = " + despesa.getId_usuario() +
+					"nome = '" + despesa.getNome() + "' " +
 					" WHERE id = " + despesa.getId();
 
+			PreparedStatement st = conexao.prepareStatement(sql);
+			st.executeUpdate();
+			st.close();
+			status = true;
+		} catch (SQLException u) {
+			throw new RuntimeException(u);
+		}
+		return status;
+	}
+
+	public boolean delete(int id) {
+		boolean status = false;
+		try {
+			String sql = "DELETE FROM despesa WHERE id = " + id;
 			PreparedStatement st = conexao.prepareStatement(sql);
 			st.executeUpdate();
 			st.close();
