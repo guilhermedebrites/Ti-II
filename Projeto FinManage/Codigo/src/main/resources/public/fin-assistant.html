@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin Assitant</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fin-assistant.css">
+    <style>
+        #ultimasRecomendacoes {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registre algumas informações para que possamos lhe ajudar!</h1>
+
+    <!-- Formulário para inclusão de despesa -->
+    <form id="meuFormulario" onsubmit="validarFormulario(); return false;">
+        <label for="renda">Qual sua renda mensal: </label>
+        <input type="text" id="renda" required>
+
+        <label for="capital">Quanto de capital, você tem investido:</label>
+        <input type="text" id="capital" required>
+
+        <label for="divida">Quanto você tem em divida: </label>
+        <input type="text" id="divida" required>
+
+        <label for="objetivo">Qual seu objetivo financeiro:</label>
+        <input type="text" id="objetivo" required>
+
+        <button type="submit">Enviar</button>
+        <button onclick="redirecionar()" id="ultimasRecomendacoes">Ver últimas recomendações</button>
+    </form>
+
+    <script src="./scripts/fin-assistant.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

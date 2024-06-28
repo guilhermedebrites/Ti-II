@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendações</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-image: url('image/black-green\ background.jpg');
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+      }
+
+      .container {
+          max-width: 1000px;
+          margin: 50px auto;
+          padding: 20px;
+          background-color: transparent; /* Adiciona transparência à cor branca */
+          text-align: center;
+      }
+
+      .section {
+          margin: 20px 0; /* Adiciona espaço superior e inferior e remove a margem inferior padrão */
+          position: relative;
+          background-size: cover;
+          background-position: center;
+          color: black;
+          border-radius: 10px;
+          padding: 30px;
+      }
+
+      /* Adiciona borda arredondada para todas as bordas das caixas */
+      .box {
+          text-align: center;
+          border-radius: 15px;
+      }
+
+      h1 {
+        margin: 0 30px 50px;
+          color: white; /* Altera a cor para branca */
+          font-size: 1.5em;
+          font-family: 'Inter', sans-serif; /* Altera a fonte para Inter */
+        font-weight: normal;
+      }
+
+      h2, p {
+          margin: 0;
+      }
+
+      h2 {
+        font-weight: normal;
+          text-align: left;
+          margin-left: 10px;
+          font-size: 1.5em;
+          margin-bottom: 10px;
+      }
+
+      p {
+          font-size: 1.1em;
+          color: black;
+          text-align: center;
+          margin-bottom: 15px; /* Adiciona espaço entre o texto e o tópico */
+      }
+
+      button {
+          background-color: green;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          text-transform: uppercase;
+          cursor: pointer;
+      }
+
+      /* Ajustes para as caixas de "Investimento" e "Gestão de Dúvidas" */
+      .section:nth-child(2),
+      .section:nth-child(4) {
+          margin: 10px 0;
+          position: relative;
+          background-size: cover;
+          background-position: center;
+          color: black;
+          border-radius: 15px;
+          padding: 10px;
+      }
+
+      ol {
+          list-style-type: none;
+          counter-reset: item;
+          padding-left: 0;
+      }
+
+      li {
+          counter-increment: item;
+          margin-bottom: 30px;
+      }
+
+      li::before {
+          content: counter(item);
+          background-color: green;
+          color: white;
+          border-radius: 50%;
+          padding: 0.2em 0.5em;
+          margin-right: 0.5em;
+          font-weight: inter;
+    
+       
+      }
+
+      /* Adiciona estilo para alinhar os tópicos */
+      ol {
+          text-align: left;
+        text-size: 10%;
+      }
+
+      li {
+          text-align: left;
+        font-size: 85%;
+        
+      }
+
+      #listaPlanejamento {
+        font-size: 1.2em;
+          color: black;
+          text-align: center;
+      }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>NOSSAS RECOMENDAÇÕES<br>PARA ALCANÇAR SEUS OBJETIVOS:</h1>
+
+    <div class="section" style="background-image: url('image/Rectangle5.png');">
+        <div class="box">
+            <h2>PLANEJAMENTO FINANCEIRO</h2>
+        </div>
+    </div>
+
+    <div class="section" style="background-image: url('image/Rectangle6.png');">
+        <div class="box">
+         
+          <ol id="listaPlanejamento"></ol>
+        </div>
+    </div>
+
+    <div style="text-align: right;">
+        <a href="./home2.html"><button>FINALIZAR</button></a>
+    </div>
+</div>
+
+<script src="./scripts/plano-financeiro.js"></script>
+</body>
+</html>
