@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de despesas</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/lance-gastos.css">
+</head>
+
+<body>
+    <h1>Lance seus gastos</h1>
+
+    <!-- Formulário para inclusão de despesa -->
+    <form>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required>
+
+        <label for="valor">Valor:</label>
+        <input type="text" id="valor" required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" required>
+            <option value="">Selecione uma categoria</option>
+            <option value="alimentacao">Alimentação</option>
+            <option value="transporte">Transporte</option>
+            <option value="moradia">Moradia</option>
+            <option value="lazer">Lazer</option>
+            <option value="outros">Outros</option>
+        </select>
+
+        <button type="submit">Incluir</button>
+    </form>
+
+    <!-- Tabela para exibição de despesas -->
+    <table>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Valor</th>
+                <th>Data</th>
+                <th>Categoria</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui serão adicionadas as linhas da tabela com as despesas cadastradas -->
+        </tbody>
+    </table>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/lance-gastos.js"></script>
+</body>
+
+</html>
