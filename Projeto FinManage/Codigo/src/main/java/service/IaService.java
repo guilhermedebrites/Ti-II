@@ -10,7 +10,7 @@ import spark.Response;
 
 public class IaService {
 
-    private static final String API_KEY = "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";
+    private static final String API_KEY = "";
 
     public String chatGpt(Request request, Response response) {
     	
